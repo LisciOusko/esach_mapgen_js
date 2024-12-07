@@ -19,7 +19,7 @@ document.body.appendChild(div);
 for (let y = 0; y < 5; y++) {
     for (let x = 0; x < 5; x++) {
         while(true) {
-            var rand_int = Math.floor(Math.random() * (63 + 1));
+            var rand_int = Math.floor(Math.random() * (61 + 1));
         
             if (!drafted.includes(rand_int)) {
                 drafted.push(rand_int);
@@ -30,27 +30,30 @@ for (let y = 0; y < 5; y++) {
         char = "";
         bg = "fuchsia";
 
-        if (rand_int < 30) {
+        if (rand_int < 25) {
             char = ".";
             bg = "#f5f5f5";
-        } else if (rand_int < 40) {
+        } else if (rand_int < 35) {
             char = "j";
             bg = "#0079f1";
-        } else if (rand_int < 50) {
+        } else if (rand_int < 43) {
             char = "o";
             bg = "#fdf900";
-        } else if (rand_int < 52) {
+        } else if (rand_int < 45) {
             char = "t";
             bg = "#ff6f00";
-        } else if (rand_int < 56) {
+        } else if (rand_int < 49) {
             char = "b";
             bg = "#000000";
-        } else if (rand_int < 59) {
+        } else if (rand_int < 52) {
             char = "e";
             bg = "#e62937";
-        } else if (rand_int < 64) {
+        } else if (rand_int < 57) {
             char = "x";
             bg = "#969696";
+        } else if (rand_int < 61) {
+            char = "s";
+            bg = "#00e430";
         } else {
             char = "!";
             bg = "fuchsia";
@@ -101,20 +104,22 @@ drawn.addEventListener("mousedown", () => {
         }
     }
 
-    if (rand_int < 30) {
+    if (rand_int < 25) {
         bg = "#f5f5f5";
-    } else if (rand_int < 40) {
+    } else if (rand_int < 35) {
         bg = "#0079f1";
-    } else if (rand_int < 50) {
+    } else if (rand_int < 43) {
         bg = "#fdf900";
-    } else if (rand_int < 52) {
+    } else if (rand_int < 45) {
         bg = "#ff6f00";
-    } else if (rand_int < 56) {
+    } else if (rand_int < 49) {
         bg = "#000000";
-    } else if (rand_int < 59) {
+    } else if (rand_int < 52) {
         bg = "#e62937";
-    } else if (rand_int < 64) {
+    } else if (rand_int < 57) {
         bg = "#969696";
+    } else if (rand_int < 61) {
+        bg = "#00e430";
     } else {
         bg = "fuchsia";
     }
